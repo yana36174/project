@@ -1,0 +1,77 @@
+.button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.simple {
+    width: 61px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    text-align: center;
+    background: none;
+ 
+}
+
+.simple:hover {
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.default {
+    width: 99px;
+    height: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    border: 99px 44px;
+    border-radius: 22px;
+}
+
+.first{
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.first:hover { 
+    opacity: 0.5;
+}
+
+.second {
+    color: #BC9CFF;
+    background: white;
+    $border: 2px;
+    position: relative;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 22px;
+
+    &:before {
+        content: '';
+        transition: 0.3s;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient( #BC9CFF 0%, #8BA4F9 100%);
+    }
+}
+
+.second:hover  {
+    &:before {
+        opacity: 0.5;
+    }
+}
+
+
+
