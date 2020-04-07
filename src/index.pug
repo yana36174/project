@@ -3,13 +3,22 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
         title Document
     body
         div(class='title')
-            div(class='title__name') saksjdalsdkl
-            include ./components/buttons/button_simple.pug
             div
-            include ./components/buttons/button_default_first.pug
+                include ./components/buttons/button_simple.pug
             div
-            include ./components/buttons/button_default_second.pug
+                include ./components/buttons/button_default_first.pug
+            div
+                include ./components/buttons/button_default_second.pug
+            div
+                include ./components/buttons/button_transition.pug
+            div
+                include ./components/buttons/radio_button.pug
+            div
+                include ./components/buttons/range_slider.pug
+        script(src='./scripts/jquery-3.4.1.min.js')
         script(src='./index.js')
+
