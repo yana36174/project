@@ -1,8 +1,11 @@
 import './style.scss'
 import './components/buttons/index'
+import './components/inputs/index'
 window.jQuery = window.$ = require('./scripts/jquery-3.4.1.min.js');
 require('./scripts/jquery-ui.min.js')
 require('./scripts/jquery.ui.touch-punch.min.js')
+
+
 
 $(".polzunok-5").slider({
     min: 0,

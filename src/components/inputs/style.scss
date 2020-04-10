@@ -1,0 +1,49 @@
+.text {
+    width: 320px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    color: rgba(31, 32, 65, 0.75);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 12px;
+    outline: none;
+}
+
+.text:hover, .text:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdawn {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #FFFFFF;
+    width: 320px;
+    padding: 12px 12px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select{
+    position: relative;
+    width: 320px;
+}
+
+.select::after {
+    content: url('./arrow.png');
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+}
+
